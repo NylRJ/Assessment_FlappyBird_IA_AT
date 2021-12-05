@@ -1,0 +1,126 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%2345678901234567890123456789012345678901234567890123456789012345678901234567890
+%        1         2         3         4         5         6         7         8
+
+\documentclass[letterpaper, 10 pt, conference]{ieeeconf}  % Comment this line out if you need a4paper
+
+%\documentclass[a4paper, 10pt, conference]{ieeeconf}      % Use this line for a4 paper
+
+\IEEEoverridecommandlockouts                              % This command is only needed if 
+                                                          % you want to use the \thanks command
+
+\overrideIEEEmargins                                      % Needed to meet printer requirements.
+
+%In case you encounter the following error:
+%Error 1010 The PDF file may be corrupt (unable to open PDF file) OR
+%Error 1000 An error occurred while parsing a contents stream. Unable to analyze the PDF file.
+%This is a known problem with pdfLaTeX conversion filter. The file cannot be opened with acrobat reader
+%Please use one of the alternatives below to circumvent this error by uncommenting one or the other
+%\pdfobjcompresslevel=0
+%\pdfminorversion=4
+
+% See the \addtolength command later in the file to balance the column lengths
+% on the last page of the document
+
+% The following packages can be found on http:\\www.ctan.org
+\usepackage{graphics} % for pdf, bitmapped graphics files
+\usepackage{epsfig} % for postscript graphics files
+\usepackage{mathptmx} % assumes new font selection scheme installed
+%\usepackage{times} % assumes new font selection scheme installed
+% \usepackage{amsmath} % assumes amsmath package installed
+% \usepackage{amssymb}  % assumes amsmath package installed
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{url}
+\newcommand{\atant}{atan2}
+\newcommand*{\QEDA}{\hfill\ensuremath{\blacksquare}}
+
+\newtheorem{theorem}{Theorem}
+
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+% \usepackage[linesnumbered,algoruled,boxed,lined,algo2e,ruled,vlined]{algorithm2e}
+\usepackage{algorithm,algorithmic}
+% links
+\usepackage[utf8]{inputenc}
+\usepackage[pdftex]{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=orange,
+    filecolor=magenta,      
+    urlcolor=orange,
+    pdftitle={Overleaf Example},
+    pdfpagemode=FullScreen,
+    }
+
+% code
+\usepackage{listings}
+\usepackage{xcolor}
+
+
+
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+
+\lstdefinestyle{mystyle}{
+    backgroundcolor=\color{backcolour},   
+    commentstyle=\color{codegreen},
+    keywordstyle=\color{magenta},
+    numberstyle=\tiny\color{codegray},
+    stringstyle=\color{codepurple},
+    basicstyle=\ttfamily\footnotesize,
+    breakatwhitespace=false,         
+    breaklines=true,                 
+    captionpos=b,                    
+    keepspaces=true,                 
+    numbers=left,                    
+    numbersep=5pt,                  
+    showspaces=false,                
+    showstringspaces=false,
+    showtabs=false,                  
+    tabsize=2
+}
+
+\lstset{style=mystyle}
+
+\title{\LARGE \bf
+Recriando uma versão do Flappy Bird com IA}
+
+\author{Moises Souza
+\thanks{*Meus agradecimentos}% <-this % stops a space
+\thanks{$^{1}$A Deus.
+        {\tt\small moises.souza@al.infnet.edu.br}}%
+}
+
+
+\begin{document}
+
+\maketitle
+\thispagestyle{empty}
+\pagestyle{empty}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Abstract
+%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Sections
+%
+\input{sections/1_Introduction} 
+\input{sections/6_Trabalhos_relacionados}
+\input{sections/2_Theory} 
+\input{sections/3_Methods} 
+\input{sections/4_Results} 
+\input{sections/5_Conclusion}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\bibliographystyle{IEEEtran}
+\bibliography{IEEEabrv,references}
+
+\end{document}
